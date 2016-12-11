@@ -2,12 +2,16 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>
-        My First EJS
-        </title>
+        <title>My First EJS</title>
+        <link rel="stylesheet" href="/css/master.css">
     </head>
     <body>
-        <h1>I'm EJS</h1><br>
-        Count : <%= count%>
+    <H1>Hello
+        <% if(name){ %>
+        <span class="name"><%= name %>!</span>
+        <% } else { %>
+        <span class="stranger">Stranger!</span>
+        <% } %>
+        </h1>
     </body>
 </html>
